@@ -21,7 +21,7 @@ export default async function Navbar() {
     </>
   );
   return (
-    <nav className="bg-secondary/30 fixed top-0 w-full">
+    <nav className="bg-secondary/30 fixed top-0 z-50 w-full">
       <div className="navbar w-11/12 mx-auto">
         <div className="flex-1">
           <div className="dropdown">
@@ -57,7 +57,7 @@ export default async function Navbar() {
         </div>
         <div className="flex-none">
           <div>
-            <ul className="menu menu-horizontal gap-3 font-semibold px-1  hidden lg:flex">
+            <ul className="menu menu-horizontal gap-3 font-semibold px-1  hidden lg:flex mr-2">
               {links}
             </ul>
           </div>

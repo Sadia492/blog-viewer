@@ -8,9 +8,21 @@ export default async function ProfilePage() {
   if (!user) {
     return redirect("/api/auth/login");
   }
+
   return (
-    <div>
-      <h2>Welcome to profile {user?.given_name}</h2>
+    <div
+      style={{
+        backgroundImage: "url(/pexels-pixabay-220116.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      className="py-10"
+    >
+      <div className="relative z-10 flex flex-col items-center justify-center text-white">
+        <h2 className="text-4xl font-semibold text-accent mb-4 border-2 rounded-3xl p-3 border-accent">
+          Welcome to your profile!
+        </h2>
+      </div>
     </div>
   );
 }
