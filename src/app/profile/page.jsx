@@ -20,7 +20,7 @@ export default async function ProfilePage() {
     >
       <div className="relative z-10 flex flex-col items-center justify-center text-white">
         <h2 className="text-4xl font-semibold text-accent mb-4 border-2 rounded-3xl p-3 border-accent">
-          Welcome to your profile!
+          Welcome to your profile {user?.given_name} {user?.family_name}!
         </h2>
       </div>
     </div>
